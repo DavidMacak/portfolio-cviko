@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 :root {
   --color-white: #f5f7f8;
   --color-yellow: #f4ce14;
@@ -14,7 +16,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Consolas, serif;
+  font-family: "JetBrains Mono", serif;
   color: white;
 }
 
@@ -254,9 +256,10 @@ h3 {
 
 #hero {
   max-width: 1300px;
-  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: auto;
+  max-height: 800px;
 }
 
 .hero-item {
@@ -267,11 +270,11 @@ h3 {
   width: 100%;
   max-width: 500px;
   height: auto;
-  position: relative;
 }
 
 @media screen and (max-width: 600px) {
   #hero {
+    height: auto;
     grid-template-columns: 1fr;
     gap: 1rem;
   }
